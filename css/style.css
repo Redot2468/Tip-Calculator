@@ -186,3 +186,20 @@ h1 {
   margin-left: 2rem;
   color: rgb(189, 189, 189);
 }
+
+/* bill container */
+.bill__container {
+  border: 1px solid black;
+  padding: 2rem;
+}
+
+.section__heading {
+  color: var(--color-secondary-dgc);
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.tip__selection-section,
+.people__amount-section {
+  margin-top: 3rem;
+}
