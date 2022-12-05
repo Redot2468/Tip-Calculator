@@ -1,0 +1,156 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-primary: hsl(172, 67%, 45%);
+  --color-secondary-vdc: hsl(183, 100%, 15%);
+  --color-secondary-dgc: hsl(186, 14%, 43%);
+  --color-secondary-gc: hsl(184, 14%, 56%);
+  --color-neutral-lgc: hsl(185, 41%, 84%);
+  --color-neutral-vlgc: hsl(189, 41%, 97%);
+  --color-neutral-white: #fff;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Space Mono", monospace;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+h1 {
+  color: var(--color-primary);
+  font-weight: 700;
+  font-size: 3.5rem;
+}
+
+/* btn */
+.btn {
+  padding: 1.5rem;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.btn__noreset {
+  background: #0d686d;
+  color: var(--color-secondary-vdc);
+  display: block;
+}
+
+.btn__reset {
+  background: var(--color-primary);
+  color: var(--color-secondary-vdc);
+  transition: background 0.2s;
+  display: none;
+}
+
+.btn__reset:hover {
+  background: #9fe8df;
+}
+
+.btn__percentage {
+  background: var(--color-secondary-vdc);
+  color: white;
+  transition: background 0.2s;
+}
+
+.btn__percentage:hover {
+  background: var(--color-primary);
+  color: var(--color-secondary-vdc);
+}
+
+/* grid */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-auto-rows: auto;
+}
+
+.grid__1x2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: auto;
+}
+
+.grid__1x3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .grid__1x2desktop {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+  }
+
+  .grid__1x3desktop {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+  }
+}
+
+/* tip container */
+
+.tip__container {
+  background: var(--color-secondary-vdc);
+  padding: 3rem;
+  border-radius: 10px;
+}
+
+/* tip per person */
+
+.tip__per-person > div {
+  border: 1px solid white;
+}
+
+.tip__heading {
+  color: white;
+  font-size: 1.8rem;
+  border: 1px solid white;
+  align-self: center;
+}
+
+.tip__heading span {
+  color: var(--color-secondary-gc);
+  font-size: 1.5rem;
+  display: block;
+  margin-top: 0.4rem;
+}
+
+.tip__amount {
+  justify-self: right;
+  border: 1px solid white;
+}
+
+.tip__container .btn {
+  margin-top: 2rem;
+}
+
+/* tip selection */
+.tip__selection {
+  gap: 15px;
+}
+
+.tip__selection p:nth-of-type(1) {
+  color: var(--color-secondary-dgc);
+  font-size: 2rem;
+  justify-self: center;
+  align-self: center;
+}
