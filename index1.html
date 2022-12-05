@@ -13,20 +13,32 @@
       rel="stylesheet"
     />
 
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/bbec75341f.js"
+      crossorigin="anonymous"
+    ></script>
+
     <!--stylesheets  -->
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <main>
-      <section class="grid__1x2 grid__1x3desktop tip__selection">
-        <button class="btn btn__percentage">5%</button>
-        <button class="btn btn__percentage">10%</button>
-        <button class="btn btn__percentage">15%</button>
-        <button class="btn btn__percentage">25%</button>
-        <button class="btn btn__percentage">50%</button>
-        <p>Custom</p>
-      </section>
+      <form action="" method="post">
+        <div class="bill__form">
+          <button class="icon"><i class="fa-solid fa-dollar-sign"></i></button>
+
+          <input
+            type="tel"
+            class="bill__input bill__amount"
+            name="bill__amount"
+            placeholder="0"
+            required
+          />
+        </div>
+      </form>
     </main>
   </body>
 </html>
+<!-- <i class="fa-solid fa-user"></i> -->
